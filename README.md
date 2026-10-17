@@ -1,20 +1,19 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# SmallsAI-cyberpunk-pageo1
 
-# Run and deploy your AI Studio app
+## Run locally
 
-This contains everything you need to run your app locally.
+Requires Node.js 20 or newer.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1CPFmi6aGXMAP3uZbWdry1FW0q4iK4Wl8
+```powershell
+npm install
+npm run dev
+```
 
-## Run Locally
+Open the local URL printed by Vite. Build the static app with:
 
-**Prerequisites:**  Node.js
+```powershell
+npm run build
+npm run preview
+```
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This repository does not currently contain a Gemini client dependency or an AI service module, so it does not need a Gemini API key. The Vite configuration no longer reads or injects provider credentials into client-side code. Development binds to loopback by default.
